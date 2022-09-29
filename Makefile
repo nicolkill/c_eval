@@ -1,5 +1,8 @@
 
 up:
+	docker compose up
+
+up_build:
 	docker compose up --build
 
 testing:
@@ -9,7 +12,7 @@ iex:
 	docker compose exec app iex -S mix
 
 bash:
-	docker compose run --rm app sh
+	docker compose exec app sh
 
 routes:
 	docker compose exec app mix phx.routes

@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+
+.w-20rem {
+  width: 20rem;
+}
+
+.mt-2rem {
+  margin-top: 2rem;;
+}
+
+.text-xs {
+  font-size: 0.7rem;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.comment {
+  color: #949494;
+}
+
+.option {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: white;
+  background-color: #494e5b;
+}
+.option:hover {
+  background-color: #5c6272;
+}
+
+.input {
+  font-size: 2rem;
+  border-radius: 5px;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: #5c6272;
+}

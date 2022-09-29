@@ -3,14 +3,18 @@ services:
   web:
     build:
       context: ./front/
+    volumes:
+      - ./front:/app
     ports:
       - 3000:3000
     environment:
-      API_URL: "http://app:4000"
+      REACT_APP_API_URL: "http://localhost:4000"
 
   app:
     build:
       context: ./api/
+    volumes:
+      - ./api:/app
     depends_on:
       - db
     ports:
