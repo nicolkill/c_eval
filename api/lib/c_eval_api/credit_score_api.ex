@@ -5,7 +5,6 @@ defmodule CEvalApi.CreditScoreApi do
   def get_credit_score(score) do
     "#{@endpoint}/#{score}"
     |> HTTPoison.get!()
-    |> IO.inspect(label: "************************")
     |> Map.get(:body)
     |> Jason.decode!()
     |> Map.get("creditScore")
